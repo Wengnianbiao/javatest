@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byName">
+
+    <bean id="marketService" class="com.javadoop.springioc.RawsonMarketServiceImpl">
+    </bean>
+    <bean id="apple" name="apple2, apple3" class="com.javadoop.springioc.Apple" scope="prototype">
+        <property name="size" value="12"/>
+        <property name="color" value="red"/>
+    </bean>
+</beans>
